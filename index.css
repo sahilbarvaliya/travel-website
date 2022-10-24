@@ -55,7 +55,7 @@
   background-color: black;
 }
 
-.logo{
+.logo {
   color: #fff;
 }
 
@@ -73,7 +73,14 @@
 .hero .hero-container h1 {
   color: #fff;
   font-family: "Kaushan Script", cursive;
-  font-size: 62px;
+  font-size: 68px;
+  text-shadow: 2px 2px black;
+}
+.hero .hero-container h4 {
+  color: #fff;
+  font-family: Montserrat;
+  text-align: center;
+  text-shadow: 2px 2px black;
 }
 
 .search-bar {
@@ -125,4 +132,162 @@
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+.section-header {
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 2rem;
+}
+
+.featured-container {
+  height: auto;
+  padding: 3rem 0 3.5rem 0;
+}
+
+.testimonial-container {
+  height: auto;
+  padding: 3rem 0 4rem 0;
+}
+
+.testimonial{
+  background-color: #eeeeee;
+}
+
+.card-conatainer {
+  display: grid;
+  grid-template-rows: 385px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.card-body {
+  box-shadow: 0 0 10px -5px rgb(0 0 0 / 50%);
+  border-radius: 10px;
+}
+
+.card-img {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.rating {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  padding: 7px;
+}
+
+.price {
+  position: absolute;
+  bottom: -27px;
+  left: 15px;
+  background: orange;
+  padding: 16px 10px;
+  height: 55px;
+  width: 60px;
+  font-family: Montserrat;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.description {
+  padding: 2rem 0.9rem 0.9rem 0.9rem;
+}
+
+.description h4 {
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+.description p {
+  font-family: Montserrat;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.info {
+  margin: 0 0.9rem;
+  border-top: 2px solid rgb(175, 173, 173);
+  display: flex;
+  align-items: center;
+  padding-top: 0.9rem;
+}
+
+.info div {
+  margin-right: 0.7rem;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+.info i,
+.rating i,
+.qoutes i {
+  color: orange;
+}
+
+.review-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.review-card-body {
+  box-shadow: 0 0 10px -5px rgb(0 0 0 / 50%);
+  border-radius: 10px;
+  padding: 1rem 1rem 2.5rem 1rem;
+  font-family: Montserrat;
+  position: relative;
+  background-color: #fff;
+}
+
+.review-text{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(143, 143, 143);
+  margin-bottom: 1rem;
+}
+
+.user-info{
+  text-align: center;
+}
+
+.user-info p{
+  font-weight: 500;
+}
+
+.qoutes{
+  display: flex;
+  justify-content: center;
+}
+
+.qoutes i {
+  font-size: 46px;
+  margin-bottom: 0.5rem;
+}
+
+.user-img{
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+}
+
+.user-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 40px;
 }
