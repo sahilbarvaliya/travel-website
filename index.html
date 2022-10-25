@@ -19,17 +19,19 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="container navbar">
-      <div class="logo">Logo</div>
-      <div class="nav-menu">
-        <ul>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="./"> Packages</a></li>
-          <li><a href="./Page/Contact/contact.html">Contact us</a></li>
-        </ul>
-      </div>
-      <div class="login-button">
-        <a href="./Page/Login/login.html">Login</a>
+    <nav id="mynav" class="nav nav-transparent">
+      <div class="container navbar">
+        <div class="logo">Logo</div>
+        <div class="nav-menu">
+          <ul>
+            <li><a class="active" href="index.html"> Home</a></li>
+            <li><a href="./Page/Packages/packages.html"> Packages</a></li>
+            <li><a href="./Page/Contact/contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="login-button">
+          <a href="./Page/Login/login.html">Login</a>
+        </div>
       </div>
     </nav>
 
@@ -196,5 +198,69 @@
         </div>
       </div>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-logo">
+            logo
+            <small
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              dolorem, recusandae ipsa illum quidem, architecto, praesentium
+              eaque. Iusto, exercitationem.</small
+            >
+          </div>
+          <div class="features">
+            <h3>Features</h3>
+            <ul>
+              <li><a href="index.html"> Home</a></li>
+              <li><a href="./Page/Packages/packages.html"> Packages</a></li>
+              <li><a href="./Page/Contact/contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <h3>Quick Contact</h3>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> +1 8948251525</li>
+              <li><i class="fa-solid fa-envelope"></i> contact@gotravel.com</li>
+              <li>
+                <i class="fa-solid fa-house-chimney"></i> XYZ Road, California.
+              </li>
+            </ul>
+          </div>
+          <div class="follow">
+            <h3>Follow us on</h3>
+            <ul>
+              <li><i class="fa-brands fa-facebook-f"></i> Facebook</li>
+              <li><i class="fa-brands fa-youtube"></i> You Tube</li>
+              <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-des">
+          <span>
+            Made with&nbsp;<i class="fa fa-heart pulse"></i
+            ><span>&nbsp;Go Travels.</span>
+          </span>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    var myNav = document.querySelector("#mynav");
+    window.onscroll = function () {
+      "use strict";
+      if (
+        document.body.scrollTop >= 200 ||
+        document.documentElement.scrollTop >= 200
+      ) {
+        myNav?.classList?.add("nav-colored");
+        myNav?.classList?.remove("nav-transparent");
+      } else {
+        myNav?.classList?.add("nav-transparent");
+        myNav?.classList?.remove("nav-colored");
+      }
+    };
+  </script>
 </html>
