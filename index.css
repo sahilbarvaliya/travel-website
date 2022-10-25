@@ -8,13 +8,34 @@
   justify-content: space-between;
   padding: 2rem 1rem;
   font-family: Montserrat;
+  width: 100%;
+  margin: auto;
+}
+
+.nav-transparent {
+  background: transparent;
+}
+
+.nav {
+  z-index: 99;
+  width: 100%;
+
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  z-index: 99;
-  margin: auto;
+}
+
+.nav {
+  transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+}
+
+.nav-colored {
+  background-color: #fff;
+  box-shadow: 0 4px 8px -2px rgb(0 0 0 / 40%);
+  -webkit-box-shadow: 0 4px 8px -2px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.4);
 }
 
 .nav-menu ul {
@@ -28,18 +49,53 @@
   margin: 0 0.5rem;
 }
 
-.nav-menu ul li a {
+.nav-colored .nav-menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.nav-colored .nav-menu ul li a:hover {
+  border-bottom: 2px solid #000000;
+}
+
+.nav-colored .active {
+  border-bottom: 2px solid #000000;
+}
+
+.nav-colored .login-button a {
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  transition: all 500ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+}
+
+.nav-colored .login-button a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000000;
+}
+
+.nav-transparent .nav-menu ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   padding-bottom: 0.5rem;
 }
 
-.nav-menu ul li a:hover {
+.nav-transparent .nav-menu ul li a:hover {
   border-bottom: 2px solid #fff;
 }
 
-.login-button a {
+.nav-transparent .active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav-transparent .login-button a {
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
@@ -49,7 +105,7 @@
   -webkit-transition: all 300ms ease-out;
 }
 
-.login-button a:hover {
+.nav-transparent .login-button a:hover {
   text-decoration: none;
   color: #fff;
   background-color: black;
@@ -151,7 +207,7 @@
   padding: 3rem 0 4rem 0;
 }
 
-.testimonial{
+.testimonial {
   background-color: #eeeeee;
 }
 
@@ -250,22 +306,22 @@
   background-color: #fff;
 }
 
-.review-text{
+.review-text {
   text-align: center;
   font-size: 15px;
   color: rgb(143, 143, 143);
   margin-bottom: 1rem;
 }
 
-.user-info{
+.user-info {
   text-align: center;
 }
 
-.user-info p{
+.user-info p {
   font-weight: 500;
 }
 
-.qoutes{
+.qoutes {
   display: flex;
   justify-content: center;
 }
@@ -275,7 +331,7 @@
   margin-bottom: 0.5rem;
 }
 
-.user-img{
+.user-img {
   position: absolute;
   bottom: -30px;
   left: 50%;
@@ -285,9 +341,94 @@
   border-radius: 40px;
 }
 
-.user-img img{
+.user-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 40px;
+}
+
+/* footer */
+footer {
+  background: #383838;
+  padding: 3rem 0 1.5rem 0;
+}
+
+.footer-des span {
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: Montserrat;
+}
+
+.footer-des .fa {
+  color: #e90606;
+  margin: 0 3px;
+  font-size: 14px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.footer-logo,
+.features,
+.contacts,
+.follow {
+  font-family: Montserrat;
+  color: #fff;
+}
+
+.footer-des {
+  border-top: 2px solid #fff;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.features h3,
+.contacts h3,
+.follow h3 {
+  margin-bottom: 1rem;
+}
+
+.features ul li,
+.contacts ul li,
+.follow ul li {
+  margin-top: 0.8rem;
+  list-style: none;
+}
+
+.features ul li i,
+.contacts ul li i,
+.follow ul li i {
+  margin-right: 0.8rem;
+}
+
+.features ul li a {
+  color: #fff;
 }
