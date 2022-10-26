@@ -135,7 +135,7 @@
 
 /* hero */
 .hero {
-  background: url("./Images/hero-image.jpg") center center / 100% 100% no-repeat
+  background: url("./Images/hero-image.webp") center center / 100% 100% no-repeat
     fixed padding-box content-box;
   height: 100vh;
   width: 100%;
