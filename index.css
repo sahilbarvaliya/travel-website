@@ -126,6 +126,12 @@
   color: #fff;
 }
 
+.footer-logo .logo h2 {
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
 
 /* hero */
 .hero {
