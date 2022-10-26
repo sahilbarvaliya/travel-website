@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   font-family: Montserrat;
   width: 100%;
   margin: auto;
@@ -111,9 +111,21 @@
   background-color: black;
 }
 
+.nav-transparent .logo h2 {
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  font-size: 28px;
+}
+.nav-colored .logo h2 {
+  font-family: "Kaushan Script", cursive;
+  color: black;
+  font-size: 28px;
+}
+
 .logo {
   color: #fff;
 }
+
 
 /* hero */
 .hero {
