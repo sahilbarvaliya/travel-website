@@ -1,0 +1,11 @@
+.package-container {
+  margin: auto;
+  padding: 5rem 0 4rem 0;
+}
+
+/* .package-card-conatainer {
+  display: grid;
+  grid-template-rows: 385px 385px 385px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+} */
